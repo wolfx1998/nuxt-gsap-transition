@@ -2,13 +2,9 @@
       <div class="clothrack">
         <h1 class="element-1">Get Some Trousers Today!</h1>
         <h1 class="element-1">Get Some Trousers Today!</h1>
-        <div class="clothes">
-                  <p><nuxt-link to="/shirts">Shirts</nuxt-link></p>
-          <p><nuxt-link to="/trousers">Trousers</nuxt-link></p>
-        </div>
       </div>
     </template>
-        <script>
+        <!-- <script>
 export default {
   asyncData () {
     return new Promise((resolve) => {
@@ -16,6 +12,15 @@ export default {
         resolve({ name: 'world' })
       }, 1000)
     })
+  }
+}
+</script> -->
+
+<script>
+import transitions from '../plugins/transitions'
+export default {
+  transition(to, from) {
+    return transitions.fade
   }
 }
 </script>

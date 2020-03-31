@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+ mode: 'spa',
   head: {
     title: 'my-transitions-project',
     meta: [
@@ -18,7 +19,6 @@ module.exports = {
   */
   // loading: { color: '#3B8070' },
   loading: '~/components/loading.vue',
-
 
 
   /*
